@@ -1,0 +1,193 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A6FFF2;
+}
+
+/* Header styles */
+header {
+    background-color: #00E0FF;
+    color: #010101;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #74F9FF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0px;
+    background-color: #A6FFF2;
+}
+
+/* Features section styles */
+#features-section {
+    flex: 1 0 300px;
+    /* Flex basis set to control width */
+    padding: 20px;
+}
+
+#features-section h2 {
+    margin-bottom: 20px;
+}
+
+#features-section ul {
+    list-style-type: none;
+}
+
+#features-section ul li {
+    margin-bottom: 10px;
+    list-style: circle;
+}
+
+/* Media container styles */
+#media-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0px;
+    /* Flex basis set to control width */
+}
+
+/* Image section styles */
+#image-section {
+    flex: 1 0 auto;
+    /* Allow image to shrink if needed */
+    padding: 20px;
+    order: 2;
+    /* Move the image section to the beginning */
+}
+
+#image-section img {
+    max-width: 88%;
+    height: auto;
+    display: block;
+}
+
+/* Video section styles */
+#video-section {
+    flex: 1 0 auto;
+    /* Allow video to shrink if needed */
+    padding: 20px;
+}
+
+#video-section video {
+    max-width: 88%;
+    height: auto;
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #E8FFE8;
+    color: #000000;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Add task section styles */
+#add-task-section {
+    margin-bottom: 20px;
+}
+
+#add-task-form {
+    display: flex;
+    align-items: center;
+}
+
+#add-task-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#add-task-form button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#add-task-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Task table styles */
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#task-table th,
+#task-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#task-table th {
+    background-color: #f2f2f2;
+}
+
+
+/* Delete and complete button styles */
+.delete-button,
+.complete-button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.complete-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Completed task style */
+.completed {
+    text-decoration: line-through;
+}
+
+.completed .complete-button {
+    background-color: #6c757d;
+}
